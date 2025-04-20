@@ -4,13 +4,20 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/website.css';
 
 
-
 const Website = () => {
 
   const navigate = useNavigate(); // ✅ INSIDE the function
 
   const handleGetStarted = () => {
     navigate('/landing');
+  };
+
+  const handleLearn = () => {
+    navigate('/learn');
+  };
+
+  const handleLearnMore = () => {
+    navigate('/learnmore');
   };
 
 
@@ -125,7 +132,7 @@ const Website = () => {
             <p className="feature-desc">
               Inclusive testing is the key to designing products that work for everyone. At Prayog Sarthi, we connect specially-abled individuals with companies to ensure products are accessible, practical, and impactful.
             </p>
-            <button className="btn">
+            <button className="btn" onClick={handleLearn}>
               Learn More
             </button>
           </div>
@@ -171,7 +178,7 @@ const Website = () => {
             <p className="feature-desc">
               Building truly accessible technology requires insights from those who experience accessibility challenges firsthand. At Prayog Sarthi, we bridge the gap between specially-abled individuals and companies, enabling businesses to refine their products with real-world user feedback.
             </p>
-            <button className="btn">
+            <button className="btn" onClick={handleLearnMore}>
               Learn More
             </button>
           </div>

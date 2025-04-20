@@ -1,0 +1,85 @@
+.learn-more-page {
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e3f9e5, #d0f0d8);
+    min-height: 100vh;
+    color: #2f4034;
+  }
+  
+  .page-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .page-header h1 {
+    font-size: 2.6rem;
+    color: #2f7034;
+  }
+  
+  .page-header .subtitle {
+    font-size: 1.2rem;
+    color: #3d8045;
+    margin-top: 8px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .back-button {
+    background-color: #3e8e41;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #367a3a;
+  }
+  
+  .content {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  .section {
+    background-color: #ffffff;
+    border-left: 6px solid #6dbb73;
+    border-radius: 12px;
+    padding: 24px 28px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+  
+  .section h2 {
+    color: #2f7034;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .section p,
+  .section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #344e41;
+  }
+  
+  .section ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .section ul li::before {
+    content: "✅";
+    color: #3e8e41;
+    margin-right: 8px;
+  }

@@ -1,0 +1,73 @@
+.learn-page {
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e0f7e9, #a5d6a7); /* Light green gradient */
+    min-height: 100vh;
+    color: #2c6b2f; /* Darker green text for better contrast */
+  }
+  
+  .learn-page h1 {
+    color: #388e3c; /* Deep green color for the heading */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .learn-page p.subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #388e3c; /* Matching subtitle color */
+  }
+  
+  .back-button {
+    background-color: #66bb6a; /* Lighter green */
+    color: white;
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding subtle shadow to the button */
+  }
+  
+  .back-button:hover {
+    background-color: #4caf50; /* Darker green on hover */
+  }
+  
+  .section {
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smoother effect */
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+  
+  .section h2 {
+    color: #388e3c; /* Consistent green for section titles */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .section ul {
+    padding-left: 1.2rem;
+    list-style: none;
+  }
+  
+  .section ul li::before {
+    content: "✅";
+    margin-right: 8px;
+    color: #66bb6a; /* Lighter green for the checkmarks */
+  }
