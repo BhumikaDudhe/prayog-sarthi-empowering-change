@@ -1,12 +1,17 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/learn.css';
 
-export default function learn() {
-  const navigate = useNavigate();
+export default function Learn() {
+  const navigate = useNavigate(); // ✅ INSIDE the function
+  
+    const handleHome = () => {
+      navigate('/Website');
+    };
 
   return (
     <div className="learn-page">
-      <button className="back-button" onClick={() => navigate("/")}>
+      <button className="back-button" onClick={handleHome}>
         ← Back to Home
       </button>
 

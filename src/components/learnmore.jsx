@@ -1,12 +1,17 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/learnmore.css';
 
-const learnmore = () => {
-  const navigate = useNavigate();
+const Learnmore = () => {
+    const navigate = useNavigate(); // ✅ INSIDE the function
+  
+    const handleHome = () => {
+      navigate('/Website');
+    };
 
   return (
     <div className="learn-more-page">
-      <button className="back-button" onClick={() => navigate("/")}>
+      <button className="back-button" onClick={handleHome}>
         ← Back to Home
       </button>
 
@@ -53,4 +58,4 @@ const learnmore = () => {
   );
 };
 
-export default learnmore;
+export default Learnmore;
