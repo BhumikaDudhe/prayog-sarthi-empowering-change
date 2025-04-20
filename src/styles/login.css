@@ -1,0 +1,142 @@
+/* App.css */
+
+.page-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  height: 10px;
+  background-color: #fdffff;
+  color: black;
+}
+
+.header h4 {
+  color: black;
+  padding-left: 200px;
+}
+
+.header-logo {
+  margin-top: 1rem;
+  width: 100px;
+  height: 100px;
+  margin-right: 19px;
+}
+
+.header-title {
+  font-size: 1.5rem;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  height: calc(100vh - 70px); /* subtract header height */
+  align-items: stretch; /* make children fill the height */
+}
+
+/* Left side */
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #003333, #001a1a);
+  color: white;
+  padding: 60px 60px 0 60px; /* removed bottom padding */
+  margin-top: 1.2rem;
+  height: 88%;
+
+}
+
+.left .logo {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.left h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.left h2 {
+  font-size: 1.5rem;
+  color: #00ffcc;
+}
+
+.left .description {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+/* Copyright */
+.copyright {
+  margin-top: auto; /* pushes to the bottom */
+  margin-left: 11.5rem;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: transparent; /* or add a bg if needed */
+}
+
+/* Right side */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.login-box {
+  background-color: #d7fce2;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-top: 1.8rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.actions a {
+  color: red;
+  text-decoration: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #001f2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 15px;
+}
